@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em Contato - Cuiabá Digital">
+  <title>Contato - Cuiabá Digital</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVEGAÇÃO -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon">🌿</div>
+        <span>Cuiabá Digital</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="gastronomia.html">Gastronomia</a></li>
+          <li><a href="cultura.html">Cultura</a></li>
+          <li><a href="natureza.html">Natureza</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background: linear-gradient(135deg, #FF6B1A, #E8A020);">
+    <div class="hero-content">
+      <h1>Entre em Contato</h1>
+      <p class="hero-subtitle">Queremos Ouvir Você</p>
+      <p>Tem dúvidas, sugestões ou gostaria de colaborar? Envie uma mensagem para nós!</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SEÇÃO: FORMULÁRIO DE CONTATO -->
+    <section id="formulario">
+      <div class="container">
+        <div class="section-title">
+          <h2>Formulário de Contato</h2>
+          <p class="section-subtitle">Preencha o formulário abaixo e entraremos em contato em breve</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); margin: var(--spacing-xl) 0; max-width: 1000px; margin-left: auto; margin-right: auto;">
+          <!-- FORMULÁRIO -->
+          <div>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+              </div>
+
+              <div class="form-group">
+                <label for="assunto">Assunto *</label>
+                <input type="text" id="assunto" name="assunto" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">Enviar Mensagem</button>
+            </form>
+            <div id="formMessage" style="margin-top: var(--spacing-lg); padding: var(--spacing-md); border-radius: 8px; display: none;"></div>
+          </div>
+
+          <!-- INFORMAÇÕES DE CONTATO -->
+          <div>
+            <div style="background: rgba(255, 107, 26, 0.1); padding: var(--spacing-lg); border-radius: 12px; border-left: 4px solid var(--primary-orange);">
+              <h3 style="margin-bottom: var(--spacing-md); color: var(--primary-orange);">Informações de Contato</h3>
+
+              <div style="margin-bottom: var(--spacing-lg);">
+                <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">📍 Localização</h4>
+                <p>Cuiabá, Mato Grosso<br>Brasil</p>
+              </div>
+
+              <div style="margin-bottom: var(--spacing-lg);">
+                <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">📧 Email</h4>
+                <p><a href="mailto:contato@cuiabádigital.com.br">contato@cuiabádigital.com.br</a></p>
+              </div>
+
+              <div style="margin-bottom: var(--spacing-lg);">
+                <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">📱 Redes Sociais</h4>
+                <p>
+                  <a href="#" style="display: inline-block; margin-right: var(--spacing-md);">Instagram</a><br>
+                  <a href="#" style="display: inline-block; margin-right: var(--spacing-md);">Facebook</a><br>
+                  <a href="#" style="display: inline-block;">TikTok</a>
+                </p>
+              </div>
+
+              <div>
+                <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">⏰ Horário de Atendimento</h4>
+                <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h<br>Domingo: Fechado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: TIPOS DE CONTATO -->
+    <section id="tipos-contato" style="background: rgba(255, 107, 26, 0.03);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Como Podemos Ajudar?</h2>
+          <p class="section-subtitle">Escolha o tipo de contato que melhor se adequa à sua necessidade</p>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #FF6B1A, #E8A020);">❓</div>
+            <div class="card-content">
+              <h3>Dúvidas Gerais</h3>
+              <p>Tem perguntas sobre o projeto, as experiências oferecidas ou como usar a plataforma? Envie sua dúvida e responderemos em breve.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #E8A020, #F0C040);">💡</div>
+            <div class="card-content">
+              <h3>Sugestões e Feedback</h3>
+              <p>Suas sugestões são valiosas! Se tem ideias para melhorar o projeto ou feedback sobre sua experiência, adoraríamos ouvir.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #F0C040, #D4A574);">🤝</div>
+            <div class="card-content">
+              <h3>Parcerias</h3>
+              <p>Você é um artista, restaurante, guia turístico ou criador local? Gostaria de fazer parte do Cuiabá Digital? Entre em contato!</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #D4A574, #C4956A);">📰</div>
+            <div class="card-content">
+              <h3>Imprensa e Mídia</h3>
+              <p>Jornalistas e produtores de conteúdo interessados em cobrir o projeto? Temos informações e materiais disponíveis.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #C4956A, #A67C52);">🐛</div>
+            <div class="card-content">
+              <h3>Reportar Problemas</h3>
+              <p>Encontrou um erro no site ou na plataforma? Nos ajude a melhorar reportando o problema.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image" style="background: linear-gradient(135deg, #A67C52, #8C6A47);">📧</div>
+            <div class="card-content">
+              <h3>Outros Assuntos</h3>
+              <p>Tem outro assunto que gostaria de discutir? Use o formulário de contato para nos enviar sua mensagem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>Perguntas Frequentes</h2>
+          <p class="section-subtitle">Respostas para as Dúvidas Mais Comuns</p>
+        </div>
+
+        <div style="max-width: 800px; margin: var(--spacing-xl) auto;">
+          <div style="background: white; border-radius: 12px; padding: var(--spacing-lg); margin-bottom: var(--spacing-lg); box-shadow: var(--shadow-md);">
+            <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">O que é o Cuiabá Digital?</h4>
+            <p>O Cuiabá Digital é uma plataforma de turismo, cultura e natureza que conecta turistas e moradores a experiências autênticas em Cuiabá, valorizando a gastronomia regional, economia criativa e natureza.</p>
+          </div>
+
+          <div style="background: white; border-radius: 12px; padding: var(--spacing-lg); margin-bottom: var(--spacing-lg); box-shadow: var(--shadow-md);">
+            <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">Como posso usar a plataforma?</h4>
+            <p>Navegue pelos pilares (Gastronomia, Cultura e Natureza), explore as experiências oferecidas, leia descrições e dicas. Se você é um profissional local interessado em se cadastrar, entre em contato conosco.</p>
+          </div>
+
+          <div style="background: white; border-radius: 12px; padding: var(--spacing-lg); margin-bottom: var(--spacing-lg); box-shadow: var(--shadow-md);">
+            <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">Como faço para me tornar um parceiro?</h4>
+            <p>Se você é um restaurante, artesão, guia turístico ou criador local, envie uma mensagem através do formulário de contato indicando seu interesse em fazer parte do projeto. Avaliaremos sua candidatura.</p>
+          </div>
+
+          <div style="background: white; border-radius: 12px; padding: var(--spacing-lg); margin-bottom: var(--spacing-lg); box-shadow: var(--shadow-md);">
+            <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">Qual é o custo para usar o Cuiabá Digital?</h4>
+            <p>A plataforma é gratuita para usuários finais (turistas e moradores). Profissionais locais interessados em recursos premium podem entrar em contato para conhecer os planos disponíveis.</p>
+          </div>
+
+          <div style="background: white; border-radius: 12px; padding: var(--spacing-lg); margin-bottom: var(--spacing-lg); box-shadow: var(--shadow-md);">
+            <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">Posso sugerir novas experiências ou atrações?</h4>
+            <p>Sim! Adoraríamos ouvir suas sugestões. Use o formulário de contato para nos enviar ideias de experiências, atrações ou melhorias para a plataforma.</p>
+          </div>
+
+          <div style="background: white; border-radius: 12px; padding: var(--spacing-lg); box-shadow: var(--shadow-md);">
+            <h4 style="color: var(--primary-orange); margin-bottom: var(--spacing-sm);">Como o projeto contribui para a comunidade local?</h4>
+            <p>O Cuiabá Digital gera impacto econômico ao aumentar a visibilidade de negócios locais, preserva o patrimônio cultural, promove o turismo sustentável e fortalece a comunidade criativa de Cuiabá.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Cuiabá Digital</h4>
+        <p>Plataforma de turismo, cultura e natureza em Cuiabá, Mato Grosso.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="gastronomia.html">Gastronomia</a></li>
+          <li><a href="cultura.html">Cultura</a></li>
+          <li><a href="natureza.html">Natureza</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Informações</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#tipos-contato">Tipos de Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Cuiabá Digital. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Menu Mobile Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Form Handling
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Collect form data
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const assunto = document.getElementById('assunto').value;
+      const mensagem = document.getElementById('mensagem').value;
+
+      // Display success message
+      formMessage.style.display = 'block';
+      formMessage.style.background = '#d4edda';
+      formMessage.style.border = '1px solid #c3e6cb';
+      formMessage.style.color = '#155724';
+      formMessage.innerHTML = `
+        <strong>✓ Mensagem Enviada com Sucesso!</strong><br>
+        Obrigado, ${nome}! Recebemos sua mensagem e entraremos em contato em breve.
+      `;
+
+      // Reset form
+      contactForm.reset();
+
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        formMessage.style.display = 'none';
+      }, 5000);
+    });
+  </script>
+</body>
+</html>
